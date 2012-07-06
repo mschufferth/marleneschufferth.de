@@ -1,0 +1,57 @@
+body {
+	background-color: rgb(217,221,226);
+	font-family: "facitweb", Helvetica, sans-serif;
+	color: rgb(27,29,34);
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.80);
+    -moz-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.80);
+    -webkit-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.80);
+}
+
+.container-fluid {
+	max-width: 1120px;
+	margin: auto;
+}
+
+.navigation {
+	padding-top: 2.5em;
+	color: rgb(29,21,77);
+	.logo {
+		float: left;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.menu {
+		float: right;
+		ol {
+			list-style: none;
+			padding: 0;
+			margin-left: 0;
+			li {
+				float: left;
+				padding-right: 2em;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				&:last-of-type {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+.intro {
+	background-color: rgb(208,212,219);
+	#welcome-message {
+		font-family: "ff-tisa-web-pro", Georgia, serif;
+		font-weight: 700;
+		font-style: italic;
+		font-size: 4em;
+		line-height: 1.2em;
+		color: rgb(50,57,114);
+	}
+}
+
+.project-case {
+	display: inline-block;
+}
