@@ -1,10 +1,14 @@
+/*******************
+Page Style
+********************/
+
 body {
 	background-color: rgb(217,221,226);
 	font-family: "facitweb", Helvetica, sans-serif;
-	color: rgb(27,29,34);
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.80);
-    -moz-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.80);
-    -webkit-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.80);
+	color: rgb(50,54,62);
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.70);
+    -moz-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.70);
+    -webkit-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.70);
 }
 
 .container-fluid {
@@ -12,13 +16,21 @@ body {
 	margin: auto;
 }
 
+
+/*******************
+Navigation
+********************/
+
 .navigation {
-	padding-top: 2.5em;
+	padding-top: 2.6em;
+	padding-bottom: 1.2em;
 	color: rgb(29,21,77);
+	font-size: 1.1em;
+	border-bottom: 4px solid rgb(34,16,77);
+	
 	.logo {
 		float: left;
-		font-weight: 700;
-		text-transform: uppercase;
+		font-weight: 500;
 	}
 	.menu {
 		float: right;
@@ -31,7 +43,7 @@ body {
 				padding-right: 2em;
 				font-weight: 700;
 				text-transform: uppercase;
-				letter-spacing: 0.06em;
+				letter-spacing: 0.09em;
 				&:last-of-type {
 					padding-right: 0;
 				}
@@ -40,8 +52,17 @@ body {
 	}
 }
 
+
+/*******************
+Intro Box
+********************/
+
 .intro {
-	background-color: rgb(208,212,219);
+	background: -webkit-linear-gradient(top, rgb(204,208,216), rgb(213,218,223));
+	
+	#profile-image {
+		vertical-align: middle;
+	}
 	#welcome-message {
 		font-family: "ff-tisa-web-pro", Georgia, serif;
 		font-weight: 700;
@@ -49,9 +70,224 @@ body {
 		font-size: 4em;
 		line-height: 1.2em;
 		color: rgb(50,57,114);
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+	}
+}
+
+
+/*******************
+Portfolio
+********************/
+
+.project-cases {
+	margin-top: 4em;
+	.line {
+		border-top: 1px dotted rgb(180,187,197);
+		padding-bottom: 2em;
 	}
 }
 
 .project-case {
-	display: inline-block;
+/*	display: inline-block;*/
+	float: left;
+	text-align: center;
+	padding-right: 2.3em;
+	width: 200px;
+	padding-bottom: 2em;
+		
+	img {
+		padding-bottom: 1em;
+	}
+	
+	a:link {
+		color: rgb(50,54,62);
+		font-size: 1em;
+		line-height: 1.5em;
+		text-align: center;
+	}
+	
+	a:hover {
+		color: rgb(224,0,121);
+		text-decoration: none;
+	}
+	
+	.circle {
+		width: 200px;
+		height: 200px;
+		background: rgb(131,142,159);
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
+		border-radius: 100px;
+		position: relative;
+		p {
+			color: white;
+			font-size: 1.2em;
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 0.1em;
+			padding: 0 1em 0 1em;
+			text-shadow: none;
+			position: relative;
+			top: 40%;
+		}
+	}
+	.announcement {
+		width: 200px;
+		height: 200px;
+		position: relative;
+		p {
+			color: white;
+			font-size: 1.2em;
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 0.1em;
+			padding: 0 1em 0 1em;
+			text-shadow: none;
+			position: relative;
+			top: -60%;
+		}
+	}
 }
+
+
+/*******************
+Activities
+********************/
+
+.activities {
+	margin-bottom: 4em;
+	border-top: 1px solid rgba(255, 255, 255, 0.40);
+	box-shadow: 0px -1px 0px 0px rgba(180, 187, 197, 1);
+	.byline {
+		padding-top: -2em;
+	}
+}
+
+
+/*******************
+About
+********************/
+
+.about {
+	margin-bottom: 4em;
+}
+
+
+/*******************
+Contact
+********************/
+
+.contact {
+	margin-bottom: 4em;
+}
+
+
+/*******************
+Footer
+********************/
+
+.footer {
+	border-top: 4px solid rgb(34,16,77);
+	p {
+		padding-top: 1em;
+		padding-bottom: 1.5em;
+		color: rgb(34,16,77);
+		font-size: 1em;
+	}
+}
+
+
+/*******************
+Headlines
+********************/
+
+h1 {
+	font-size: 1.6em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: rgb(29,21,77);
+	padding-top: 1em;
+	padding-bottom: 1.5em;
+	letter-spacing: 0.05em;
+}
+
+h2 {
+	font-family: "ff-tisa-web-pro", Georgia, serif;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	font-weight: 500;
+	font-style: italic;
+	color: rgb(43,43,69);
+	padding-bottom: 1em;
+	
+	a:link {
+		color: rgb(50,54,62);
+	}
+	a:hover {
+		color: rgb(224,0,121);
+		text-decoration: none;
+	}
+}
+
+h3 {
+	font-size: 1.1em;
+	color: rgb(102,109,128);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding-bottom: 1em;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: 500;
+	font-style: italic;
+	color: rgb(96,96,96);
+	padding-bottom: 1em;
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	padding-bottom: 0.3em;
+	padding-right: 1em;
+	
+	a:link {
+		color: rgb(224,0,121);
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	a:active {
+		text-decoration: underline;
+	}
+	a:visited {
+		color: rgb(224,0,121);
+	}
+}
+
+.caption {
+	font-size: 0.8em;
+	color: rgb(131,142,159);
+	text-shadow: none;
+	padding-top: 0.5em;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.30);
+    -moz-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.30);
+    -webkit-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.30);
+}
+
+.byline {
+	color: rgb(131,142,159);
+	font-size: 1.1em;
+	line-height: 1.5em;
+	text-shadow: none;
+	padding-bottom: 0.5em;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.30);
+    -moz-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.30);
+    -webkit-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.30);
+}
+
+
+/*******************
+Links
+********************/

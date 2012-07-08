@@ -33,7 +33,7 @@
 			
 			<div class="intro row-fluid">
 				<div class="span3">
-					<img src="img/profile-quote.png"/>
+					<img id="profile-image" src="img/profile-quote.png"/>
 				</div>
 				<div class="span9">
 					<p id="welcome-message">Hi, I’m a visual and interaction designer based in Berlin.</p>
@@ -44,98 +44,148 @@
 			<div class="portfolio">
 				<div class="row-fluid">
 					<div class="span12">
-						<hr>
 						<h1>Portfolio</h1>
 					</div>
 				</div>
 				<div class="row-fluid">
-					<div class="span3">
+					<div class="span4">
 						<h3>medx</h3>
 						<h2>Branding and user interface design for a medical diagnosis app tailored to the iPad.</h2>
-						<p>The project was created while freelancing for S.M.A.R.T. GmbH</p>
-						<p>Live at eyeplorer.com/medx</p>
-						<p>Edenspiekermann’s project case edenspiekermann.com/medx</p>
+						<p class="byline">The project was created while freelancing for <a>S.M.A.R.T. GmbH</a></p>
 					</div>
-					<div class="span9">
-						<iframe src="http://player.vimeo.com/video/36804556" width="100%" height="73%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/36804556">medx_english</a> from <a href="http://vimeo.com/user10434927">Ben von Grafenstein</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+					<div class="span8">
+						<iframe src="http://player.vimeo.com/video/36804556?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0179" width="740" height="416" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+						</iframe> 
+						<p class="caption"><a href="http://vimeo.com/36804556">Video</a> by Ben von Grafenstein on Vimeo</p>
 						<img src="img/cases/medx-01.png">
 					</div>
 				</div>
-				<div class="row-fluid">
-					<div class="span2">
-						<p>client projects</p>
-					</div>
-					<div class="span10">
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
+				<div class="project-cases row-fluid">
+					<div class="line"></div>
+					<div class="span12">
+						<div class="span2">
+							<h4>client projects</h4>
 						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
-						</div>
+						<div class="span10">
+							<div class="project-case hover">
+								<a href="">
+									<img src="img/cases/rbmar.png"/>
+									<p>Red Bull Music Academy Radio</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/screenfeeder.png"/>
+									<p>Screenfeeder</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/mka.png"/>
+									<p>mka Anwälte</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/quaters.png"/>
+									<p>Quarters</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/eurogate.png"/>
+									<p>Eurogate II</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/medx.png"/>
+									<p>medx</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/rbma-worldtour.png"/>
+									<p>Red Bull Music Academy World Tour</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/hering.png"/>
+									<p>Hering Berlin</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/obo-bms.png"/>
+									<p>Otto Bock Brand Management System</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/diesel-mag.png"/>
+									<p>Diesel Magazine</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/vw-carsharing.png"/>
+									<p>VW Carsharing</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/velo-konzept.png"/>
+									<p>Velo Konzept</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/fes.png"/>
+									<p>Friedrich-Ebert-Stiftung</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<div class="circle">
+									<p>more to be released soon</p>
+								</div>
+							</div>
+						</div>	
 					</div>
 				</div>
 				<div class="row-fluid">
-					<div class="span2">
-						<p>personal projects</p>
-					</div>
-					<div class="span10">
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
+					<div class="line"></div>
+					<div class="span12">
+						<div class="span2">
+							<h4>personal projects</h4>
 						</div>
-						<div class="project-case">
-							<img src="img/cases/rbmar.png"/>
-							<p>Red Bull Music Academy Radio</p>
+						<div class="span10">
+							<div class="project-case">
+								<div class="announcement">
+									<img src="img/cases/1kdims.png"/>
+									<p>coming soon</p>
+								</div>
+								<p>1kdims</p>
+							</div>
+							<div class="project-case">
+								<div class="announcement">
+									<img src="img/cases/kwotes.co.png"/>
+									<p>coming soon</p>
+								</div>
+								<p>kwotes.co</p>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/ms.png"/>
+									<p>Marlene Schufferth</p>
+								</a>
+							</div>
+							<div class="project-case">
+								<a href="">
+									<img src="img/cases/eyeknow.png"/>
+									<p>Pocket Wiki</p>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -144,26 +194,25 @@
 			<div class="activities">
 				<div class="row-fluid">
 					<div class="span12">
-						<hr>
+						<div class"line"></div>
 						<h1>Activities</h1>
 					</div>
 				</div>
 				<div class="row-fluid">
 					<div class="span4">
-						<p>follow me on twitter</p>
+						<a href="http://www.twitter.com/mschufferth">follow me on twitter</a>
 					</div>
 					<div class="span4">
 						<img src="img/jessica.png"/>
 						<p class="caption">Foto: Paul Woods</p>
-						<h2>ESPI on site: Jessica Hische vereint Nerds durch Typographie</h1>
-						<p class="byline">May 22, 2012 08:41</p>
-						<a href="">Check out my blog</a>
+						<h2><a href="http://edenspiekermann.com/en/blog/espi-on-site-jessica-hische-auf-der-typo">ESPI on site: Jessica Hische vereint Nerds durch Typographie</a></h2>
+						<p class="byline">May 22, 2012</p>
 					</div>
 					<div class="span4">
 						<img src="img/badges.png"/>
 						<p class="caption">Image: dribbble.com/allisongrayce</p>
-						<h2>I’m currently wotking on my coding skills with treehouse’s great video tutorials.</h1>
-						<p class="byline">Check out my progress at <a href="http://www.teamtreehouse.com/mschufferth">treehouse</a></p>
+						<h2><a href="http://teamtreehouse.com/mschufferth">I’m currently wotking on my coding skills with treehouse’s great video tutorials.</a></h2>
+						<p class="byline">June 15, 2012</p>
 					</div>
 				</div>
 			</div>
@@ -171,24 +220,23 @@
 			<div class="about">
 				<div class="row-fluid">
 					<div class="span12">
-						<hr>
 						<h1>About</h1>
 					</div>
 				</div>
 				<div class="row-fluid">
 					<div class="span6">
-						<p>Who I am?</p>
-						<p>My name is Marlene Schufferth. I’m a 25 year old visual and interaction designer living, loving, learning and working in Berlin since 6 years now.
-						After I finished my studies of visual communication at design akademie berlin in 2010, I focused on designing for digital media. I’ve been freelancing ever since, mainly for Edenespiekermann Berlin.
-						Working with Edenspiekermann’s great webteam gave me the opportunity to work for great clients such as Red Bull, Ableton, Carhartt, Gravis, Axel Springer, Hering Berlin, Otto Bock, Sentres, Tegut, Visit Berlin, MEAG and Bosch.
-						In the beginning of this year I co-founded 1kdims with the goal to realize own ideas and projects. More updates shortly at 1kdims.com.</p>
+						<h4>Who I am?</h4>
+						<p>My name is Marlene Schufferth. I’m a 25 year old visual and interaction designer living, loving, learning and working in Berlin since 6 years now.</p>
+						<p>After I finished my studies of visual communication at <a href="http://www.design-akademie-berlin.de/">design akademie berlin</a> in 2010, I focused on designing for digital media. I’ve been freelancing ever since, mainly for <a herf="http://edenspiekermann.com">Edenspiekermann Berlin.</a></p>
+						<p>Working with Edenspiekermann’s great webteam gave me the opportunity to work for great clients such as Red Bull, Ableton, Carhartt, Gravis, Axel Springer, Hering Berlin, Otto Bock, Sentres, Tegut, Visit Berlin, MEAG and Bosch.</p>
+						<p>In the beginning of this year I co-founded 1kdims with the goal to realize own ideas and projects. More updates shortly at <a href="http://1kdims.com">1kdims.com</a>.</p>
 					</div>
 					<div class="span6">
-						<p>How I work?</p>
-						<p>I’m used to working from concept over sketches to finished design in an agile process closely with front and backend developers.
-						Hence I’m used to management tools like basecamp, pivotal or Jira. Further I am familiar with version control systems like git/github or subversion.
-						My tool of choice when it comes to design is keynote (read this article of my collegue Paul and you’re convinced too) but of course I equally master Adobe’s Phtotoshop, Illustrator and InDesign.
-						I have a good understanding of HTML and CSS as well as today’s web standards and trends which makes it easy to work with developers. My goal is however to be able to realize designs myself, that is why I am taking online courses with Treehouse.</p>
+						<h4>How I work?</h4>
+						<p>I’m used to working from concept over sketches to finished design in an agile process closely with front and backend developers.</br>
+						Hence I’m used to management tools like <a href="http://basecamp.com/one-page-project">basecamp</a> and <a href="https://www.pivotaltracker.com/">pivotal</a>. Further I am familiar with version control systems like <a href="https://github.com/">git/github</a>.</p>
+						<p>My tool of choice when it comes to design is keynote (read this <a href="http://edenspiekermann.com/en/blog/espi-at-work-the-power-of-keynote">post</a> of my collegue Paul and you’re convinced too) but of course I equally master Adobe’s Phtotoshop, Illustrator and InDesign.</p>
+						<p>I have a good understanding of HTML and CSS as well as today’s web standards and trends which makes it easy to work with developers. My goal is however to be able to realize designs myself, that is why I am taking online courses with <a href="http://teamtreehouse.com">Treehouse</a>.</p>
 					</div>
 				</div>
 			</div>
@@ -196,36 +244,37 @@
 			<div class="contact">
 				<div class="row-fluid">
 					<div class="span12">
-						<hr>
 						<h1>Contact</h1>
 					</div>
 				</div>
 				<div class="row-fluid">
 					<div class="span8">
-						<p>I am always up for great ideas and project so don’t hesitate to drop me a line and get me to work with you.</p>
-						<form action="#" method"POST" name="my_form">
-							<fieldset>
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name"><br>
-								<label for="e-mail">eMail</label>
-								<input type="e-mail" name="e-mail" id="e-mail"><br>
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="10" cols="30"></textarea>
-							</fieldset>
-						</form>
+						<h2>I am always up for great ideas and projects, </br>so don’t hesitate to contact me.</h2>
+						<!-- <form action="#" method"POST" name="my_form">
+													<fieldset>
+														<label for="name">Name</label>
+														<input type="text" name="name" id="name"><br>
+														<label for="e-mail">eMail</label>
+														<input type="e-mail" name="e-mail" id="e-mail"><br>
+														<label for="message">Message</label>
+														<textarea name="message" id="message" rows="10" cols="30"></textarea>
+													</fieldset>
+												</form> -->
 					</div>
 					<div class="span4">
 						<p>Imprint</p>
-						<p>Diensteanbieter gemäß §5 TMG bzw. Verantwortlicher gemäß  § 55 Abs. 2 RStV:
-						Marlene Schufferth Warschauer Str. 24, 10243 Berlin
-						Email: mail@marleneschufferth.de</p>
+						<p>Diensteanbieter gemäß §5 TMG bzw. Verantwortlicher gemäß  § 55 Abs. 2 RStV:</p>
+						<p>Marlene Schufferth </br>
+						Warschauer Str. 24, 10243 Berlin</p>
+						<p>Email: <a href="mailto:mail@marleneschufferth.de">mail@marleneschufferth.de</a></p>
+						<p>This site is designed and build by myself, using <a href="http://twitter.github.com/bootstrap/">twitter bootstrap</a>, <a href="http://lessframework.com/">less</a> and <a href="http://jquery.com/">jquery</a>. Hosted via <a href="http://pages.github.com/">github pages</a>.</p>
+						<p>Fonts in use: Calluna Sans and Tisa hosted by <a href="https://typekit.com">Typekit</a>.</p>
 					</div>
 				</div>
 			</div>
 			
 			<div class="footer row-fluid">
 				<div class="span12">
-					<hr>
 					<p>© Marlene Schufferth, July 2012</p>
 				</div>
 			</div>
