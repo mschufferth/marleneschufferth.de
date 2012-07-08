@@ -31,6 +31,7 @@ Navigation
 	.logo {
 		float: left;
 		font-weight: 500;
+		color: rgb(50,57,114);
 	}
 	.menu {
 		float: right;
@@ -41,7 +42,7 @@ Navigation
 			li {
 				float: left;
 				padding-right: 2em;
-				font-weight: 700;
+				font-weight: 500;
 				text-transform: uppercase;
 				letter-spacing: 0.09em;
 				&:last-of-type {
@@ -65,11 +66,7 @@ Intro Box
 		padding-top: 3em;
 	}
 	
-	.my-quote {
-		float: left;
-		padding-top: 1.5em;
-		padding-bottom: 1.5em;
-		padding-left: 1em;
+	#my-quote {
 		p {
 			font-family: "ff-tisa-web-pro", Georgia, serif;
 			font-weight: 700;
@@ -77,6 +74,9 @@ Intro Box
 			font-size: 4em;
 			line-height: 1.2em;
 			color: rgb(50,57,114);
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			padding-left: 1em;
 		}
 	}
 }
@@ -89,81 +89,85 @@ Portfolio
 .portfolio {
 	border-top: 1px solid rgba(255, 255, 255, 0.40);
 	box-shadow: 0px -1px 0px 0px rgba(180, 187, 197, 1);
-}
-.project-cases {
-	margin-top: 4em;
-	
-	/*******************
-	.line {
-		border-top: 1px dotted rgb(180,187,197);
-		padding-bottom: 2em;
-	}
-	********************/
-	
-}
 
-.project-case {
-/*	display: inline-block;*/
-	float: left;
-	text-align: center;
-	padding-right: 2.3em;
-	width: 200px;
-	padding-bottom: 2em;
-		
-	img {
-		padding-bottom: 1em;
+	.shot {
+		padding-top: 2em;
 	}
 	
-	a:link {
-		color: rgb(50,54,62);
-		font-size: 1em;
-		line-height: 1.5em;
+	.project-cases {
+		margin-top: 4em;
+	
+		/*******************
+		.line {
+			border-top: 1px dotted rgb(180,187,197);
+			padding-bottom: 2em;
+		}
+		********************/
+	
+	}
+
+	.project-case {
+/*		display: inline-block;*/
+		float: left;
 		text-align: center;
-	}
-	
-	a:hover {
-		color: rgb(224,0,121);
-		text-decoration: none;
-	}
-	
-	.circle {
+		padding-right: 2.3em;
 		width: 200px;
-		height: 200px;
-		background: rgb(131,142,159);
-		-moz-border-radius: 100px;
-		-webkit-border-radius: 100px;
-		border-radius: 100px;
-		position: relative;
-		p {
-			color: white;
-			font-size: 1.2em;
-			text-transform: uppercase;
-			font-weight: 700;
-			letter-spacing: 0.1em;
-			padding: 0 1em 0 1em;
-			text-shadow: none;
-			position: relative;
-			top: 40%;
+		padding-bottom: 2em;
+		
+		img {
+			padding-bottom: 1em;
 		}
-	}
-	.announcement {
-		width: 200px;
-		height: 200px;
-		position: relative;
-		p {
-			color: white;
-			font-size: 1.2em;
-			text-transform: uppercase;
-			font-weight: 700;
-			letter-spacing: 0.1em;
-			padding: 0 1em 0 1em;
-			text-shadow: none;
+	
+		a:link {
+			color: rgb(50,54,62);
+			font-size: 1em;
+			line-height: 1.5em;
+			text-align: center;
+		}
+	
+		a:hover {
+			color: rgb(224,0,121);
+			text-decoration: none;
+		}
+	
+		.circle {
+			width: 200px;
+			height: 200px;
+			background: rgb(131,142,159);
+			-moz-border-radius: 100px;
+			-webkit-border-radius: 100px;
+			border-radius: 100px;
 			position: relative;
-			top: -60%;
+			p {
+				color: white;
+				font-size: 1.2em;
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				padding: 0 1em 0 1em;
+				text-shadow: none;
+				position: relative;
+				top: 40%;
+			}
+		}
+		.announcement {
+			width: 200px;
+			height: 200px;
+			position: relative;
+			p {
+				color: white;
+				font-size: 1.2em;
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				padding: 0 1em 0 1em;
+				text-shadow: none;
+				position: relative;
+				top: -60%;
+			}
 		}
 	}
 }
-
 
 /*******************
 Activities
