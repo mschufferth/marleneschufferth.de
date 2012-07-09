@@ -344,12 +344,11 @@
 
 		//Direction navigation (arrows)
 		if(this.settings.directionNavEnabled) {	
-			this._slidesWrapper.after("<a href='#' class='arrow left'/>");
-			this._slidesWrapper.after("<a href='#' class='arrow right'/>");
+            var arrowNavigationContainer = $('#slider-arrow-navigation');
+            arrowNavigationContainer.html("<div class='royalArrowContainer'><a href='#' class='arrow left'/><a href='#' class='arrow right'/></div>");
 
-
-			this.arrowLeft = this.slider.find("a.arrow.left");
-			this.arrowRight = this.slider.find("a.arrow.right");
+			this.arrowLeft = arrowNavigationContainer.find("a.arrow.left");
+			this.arrowRight = arrowNavigationContainer.find("a.arrow.right");
 
 			if(this.arrowLeft.length < 1 || this.arrowRight.length < 1) {
 				this.settings.directionNavEnabled = false;

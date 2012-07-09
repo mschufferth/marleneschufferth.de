@@ -10,5 +10,18 @@ $(document).ready(function() {
             return false;
         });
     });
+
+    $('#slider').royalSlider({
+        captionShowEffects:["moveleft", "fade"],
+        directionNavEnabled: true,
+        directionNavAutoHide: false,
+        autoScaleSlider: true,
+        autoScaleSliderWidth: 1120,
+        autoScaleSliderHeight: 700,
+        beforeLoadStart:function() {                    
+            this.arrowLeft.html('LEFT');
+            this.arrowRight.html('RIGHT');
+        },
+    });
 });
 
