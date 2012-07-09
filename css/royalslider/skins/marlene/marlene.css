@@ -12,9 +12,6 @@
 	Left and right navigation arrows 	
 */
 
-.royalSlider .arrow {
-
-}
 
 .royalSlider.marlene .arrow {	
 	/* background:url(controls-sprite.png) no-repeat 0 0; */
@@ -27,41 +24,25 @@
 	margin-top:-49px;
 }
 
-/* left arrow */
-.royalSlider.marlene .arrow.left {
-	/* background-position: top left; */
-	/* left: -32px;	 */
-}
-/* right arrow */
-.royalSlider.marlene .arrow.right {
-	/* background-position: top right; */
-	/* right: -32px; */
+.royalArrowContainer .arrow {
+	font-size: 1em;
+	font-weight: 600;
+	color: #9c0054;
+	text-transform: uppercase;
+	padding-left: 1em;
 }
 
-/* Arrow down state */
 .royalSlider.marlene .arrow:active {
-	
+	text-decoration: underline;
 }
 
-/* Arrow hover state */
-.royalSlider.marlene .arrow:hover {	
-	/* -moz-opacity: 1;	 */
-	/* opacity: 1;	 */
-}
-/* Arrow disabled state */
-.royalSlider.marlene .arrow.disabled {
-	/* -moz-opacity: 1;	 */
-	/* opacity: 1;	 */
+.royalArrowContainer .arrow:hover {	
+	text-decoration: underline;
 }
 
-.royalSlider.marlene .arrow.left.disabled {	
-	/* background-position: -32px 0px;	 */
+.royalArrowContainer .arrow.disabled {
+	color: rgb(102,109,128);
 }
-.royalSlider.marlene .arrow.right.disabled {	
-	/* background-position: -136px 0px;	 */
-}
-
-
 
 /* 
 
@@ -175,7 +156,8 @@
 .royalArrowContainer {
     min-width: 50px;
     min-height: 50px;
-    background-color: red;
+	text-align: right;
+	padding-top: 2.5em;
 }
 
 .royalSlider .arrow {

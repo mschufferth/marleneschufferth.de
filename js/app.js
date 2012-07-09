@@ -19,8 +19,8 @@ $(document).ready(function() {
         autoScaleSliderWidth: 1120,
         autoScaleSliderHeight: 700,
         beforeLoadStart:function() {                    
-            this.arrowLeft.html('LEFT');
-            this.arrowRight.html('RIGHT');
+            this.arrowLeft.html('previous');
+            this.arrowRight.html('next');
         },
     });
 

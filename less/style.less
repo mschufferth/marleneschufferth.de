@@ -22,18 +22,19 @@ Navigation
 ********************/
 
 .navigation {
+	display: none;
 	padding-top: 2.6em;
 	padding-bottom: 1.2em;
-	color: rgb(29,21,77);
 	font-size: 1.1em;
 	border-bottom: 4px solid rgb(34,16,77);
 	
 	.logo {
 		float: left;
 		font-weight: 600;
-		color: rgb(50,57,114);
+		color: rgb(34,16,77);
 	}
 	.menu {
+		display: none;
 		float: right;
 		ol {
 			list-style: none;
@@ -60,6 +61,7 @@ Intro Box
 
 .intro {
 	background: -webkit-linear-gradient(top, rgb(204,208,216), rgb(213,218,223));
+	border-top: 4px solid rgb(34,16,77);
 	
 	#profile-image {
 		text-align: center;
@@ -67,6 +69,7 @@ Intro Box
 	}
 	
 	#my-quote {
+		
 		p {
 			font-family: "ff-tisa-web-pro", Georgia, serif;
 			font-weight: 700;
@@ -74,9 +77,16 @@ Intro Box
 			font-size: 4em;
 			line-height: 1.2em;
 			color: rgb(50,57,114);
-			padding-top: 1.5em;
-			padding-bottom: 1.5em;
-			padding-left: 1em;
+			padding-top: 1em;
+		}
+		#name {
+			font-size: 1.1em;
+			font-family: "facitweb", Helvetica, sans-serif;
+			color: rgb(102,109,128);
+			font-style: normal;
+			padding-bottom: 3.5em;
+			text-transform: uppercase;
+			font-weight: 600;
 		}
 	}
 }
@@ -89,8 +99,7 @@ Portfolio
 .portfolio {
 	border-top: 1px solid rgba(255, 255, 255, 0.40);
 	box-shadow: 0px -1px 0px 0px rgba(180, 187, 197, 1);
-
-	}
+	padding-bottom: 4em;
 
     .project-detail {
         // display: none;
@@ -161,6 +170,7 @@ Portfolio
                 }
             }
         }
+}
 
 /*******************
 Activities
@@ -318,9 +328,32 @@ Links
     width: 100%;
     height: 100%;
 }
+
 .royalSlider .royalSlide, .royalSlider .royalWrapper {
     background: none;
 }
 
+.royalControlNavOverflow {
+	padding-bottom: 2em;
+}
+
 #tweets {
+	font-family: "ff-tisa-web-pro", Georgia, serif;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	font-weight: 700;
+	font-style: italic;
+	color: rgb(43,43,69);
+	ul {
+		list-style: none;
+		margin: 0;
+	}
+	.timestamp {
+		font-size: 0.6em;
+		font-family: "facitweb", Helvetica, sans-serif;
+		color: rgb(50,54,62);
+		font-style: normal;
+		font-weight: 400;
+		padding-top: 1em;
+	}
 }
