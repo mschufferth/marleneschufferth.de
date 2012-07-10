@@ -15,6 +15,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="http://use.typekit.com/ohq5icm.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+		<meta property="og:title" content="Visual and interaction designer Marlene Schufferth" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://www.marleneschufferth.de" />
+		<meta property="og:image" content="http://marleneschufferth.de/img/profile-quote.png" />
+		<meta property="og:site_name" content="Marlene Schufferth’s website" />
+		<meta property="fb:admins" content="1076082783" />
 	</head>
 	
 	<body>
@@ -252,7 +259,7 @@
                             <img src="img/twitter.png"/>
                         </div>
                         <div class="twitter">
-                            <a href="http://www.twitter.com/mschufferth">Follow me on twitter</a>
+                            <a href="http://www.twitter.com/mschufferth">@mschufferth</a>
                         </div>
 					</div>
 					<div class="span4">
@@ -304,6 +311,12 @@
 					<div class="span6">
 						<h2>I am always up for great ideas and projects, </br>so don’t hesitate to contact me.</h2>
 						<p>Find me on <a href="https://twitter.com/mschufferth" target="_blank">Twitter</a>, <a href="http://www.xing.com/profile/Marlene_Schufferth?sc_o=mxb_p" target="_blank">Xing</a>, <a href="http://de.linkedin.com/pub/marlene-schufferth/44/979/1a3" target="_blank">LinkedIn</a>, <a href="https://github.com/mschufferth" target="_blank">Github</a> or <a href="http://dribbble.com/mschufferth" target="_blank">Dribbble</a>.</p>
+						<div class="span3">
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Check out the website of visual and interaction Marlene Schufferth." data-count="horizontal">Tweet</a>
+						</div>
+						<div class="span3">
+							<div class="fb-like" data-href="http://www.marleneschufferth.de" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+						</div>
 						<!-- <form action="#" method"POST" name="my_form">
 													<fieldset>
 														<label for="name">Name</label>
@@ -340,6 +353,7 @@
         <script src="js/jquery.timeago.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.tweetable.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-33289080-1']);
@@ -351,6 +365,36 @@
              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
              })();
          </script>
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<script type="text/javascript" charset="utf-8">
+			window.twttr = (function (d,s,id) {
+		    	var t, js, fjs = d.getElementsByTagName(s)[0];
+		    	if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+		    	js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+		    	return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+			}(document, "script", "twitter-wjs"));
+		</script>
+		<script type="text/javascript charset="utf-8>
+			function tweetIntentToAnalytics(intent_event) {
+			    if (intent_event) {
+			      var label = "tweet";
+			      pageTracker._trackEvent('twitter_web_intents', intent_event.type, label);
+			    };
+			  }
+		</script>
+		<script type="text/javascript" charset="utf-8">
+			twttr.events.bind('tweet', tweetIntentToAnalytics);
+		</script>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
 	</body>
 	
 </html>
