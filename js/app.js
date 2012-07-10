@@ -17,7 +17,7 @@ $(document).ready(function() {
         directionNavAutoHide: false,
         autoScaleSlider: true,
         autoScaleSliderWidth: 1120,
-        autoScaleSliderHeight: 700,
+        autoScaleSliderHeight: 675,
         beforeLoadStart:function() {                    
             this.arrowLeft.html('previous');
             this.arrowRight.html('next');
