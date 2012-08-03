@@ -23,6 +23,7 @@ Navigation
 
 .navigation {
 	display: none;
+	background-color: rgb(217,221,226);
 	padding-top: 2.6em;
 	padding-bottom: 1.2em;
 	font-size: 1.1em;
@@ -30,17 +31,15 @@ Navigation
 	
 	.logo {
 		float: left;
-		font-weight: 600;
-		color: rgb(34,16,77);
 	}
 	.menu {
-		display: none;
 		float: right;
 		ol {
 			list-style: none;
 			padding: 0;
 			margin-left: 0;
 			li {
+				color: rgb(34,16,77);
 				float: left;
 				padding-right: 2em;
 				font-weight: 700;
@@ -48,6 +47,9 @@ Navigation
 				letter-spacing: 0.09em;
 				&:last-of-type {
 					padding-right: 0;
+				}
+				a:link {
+					color: rgb(34,16,77);
 				}
 			}
 		}
@@ -60,8 +62,11 @@ Intro Box
 ********************/
 
 .intro {
-	background: -webkit-linear-gradient(top, rgb(204,208,216), rgb(213,218,223));
 	border-top: 4px solid rgb(34,16,77);
+	background: -webkit-linear-gradient(top, rgb(204,208,216), rgb(213,218,223));
+	/***********************************
+	border-top: 4px solid rgb(34,16,77);
+	***********************************/
 	
 	#profile-image {
 		text-align: center;
@@ -230,12 +235,18 @@ Footer
 ********************/
 
 .footer {
+	margin-top: 10em;
 	border-top: 4px solid rgb(34,16,77);
+
 	p {
 		padding-top: 1em;
 		padding-bottom: 1.5em;
+		padding-right: 0;
 		color: rgb(34,16,77);
 		font-size: 1em;
+		a {
+			float: right;
+		}
 	}
 }
 

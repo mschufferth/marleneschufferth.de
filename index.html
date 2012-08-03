@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="http://use.typekit.com/ohq5icm.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		
+				
 		<meta property="og:title" content="Marlene Schufferth" />
 		<meta property="og:description" content="This is the website of visual and interaction designer Marlene Schufferth." />
 		<meta property="og:type" content="website" />
@@ -28,18 +28,18 @@
 	<body>
 		<div class="container-fluid">
 		
-			<div class="navigation row-fluid">
+			<div class="navigation row-fluid" id="navigation">
 				<div class="span12">
 					<div class="logo">
-						<p>Marlene Schufferth</p>
+						<img src ="img/logo.png" width="40px" />
 					</div>
 					<div class="menu">
 						<ol>
-							<li>Portfolio</li>
-							<li>Activities</li>
-							<li>About</li>
-							<li>Contact</li>
-                            <li><a href="http://blog.marleneschufferth.de">Blog</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#activities">Activities</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+                            <li><a href="http://blog.marleneschufferth.de" target="_blank">Blog</a></li>
 						</ol>
 					</div>
 				</div>
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 			
-			<div class="portfolio">
+			<div class="portfolio" id="portfolio">
 				<div class="row-fluid">
 					<div class="span6">
 						<h1>Projects</h1>
@@ -67,6 +67,22 @@
                         <div id="slider" class="royalSlider marlene">
                             <ul class="royalSlidesContainer">
                                 <li class="royalSlide">
+									<div class="project-detail" data-id="1kdims">
+                                            <div class="span4">
+                                                <h3>1kdims</h3>
+                                                <h2>Branding and webdesign for a start-up</h2>
+                                                <p class="byline">
+                                                    1kdims UG is the newest venture I’ve taken part in. I co-founded the start-up with two partners to be able to work on our own ides in the area of web and app solutions. In addition to that we’d love to take part in client’s project and help them realize their ideas with our skills and experience.</a>
+                                                </p>
+                                                <p class="byline">You can find all about us and our work at <a href="http://1kdims.com" target="_blank">1kdims.com</a>.</p>
+                                                <p class="byline">Our site is an official Awwwards nominee. <a href="http://www.awwwards.com/best-websites/1kdims" target="_blank">Vote for us!</a>
+                                            </div>
+                                            <div class="span8">
+                                                <img src="img/cases/1kdims.png">
+                                            </div>
+                                    </div>
+								</li>
+								<li class="royalSlide">
                                     <div class="project-detail" data-id="rbmar">
                                             <div class="span4">
                                                 <h3>Red Bull Music Academy Radio</h3>
@@ -75,7 +91,7 @@
                                                     I was very lucky taking part in this great project while working with the talented guys at <a href="http://edenspiekermann.com">Edenspiekermann</a>.
                                                 </p>
                                                 <p class="byline">You can explore the new Radio at <a href="http://rbmaradio.com" target="_blank">rbmaradio.com</a>.</p>
-                                                <p class="byline">Read a short blog post with the announcement on <a href="http://edenspiekermann.com/en/blog/coming-soon-the-all-new-rbma-radio" target="_blank">Edenspiekermann’s blog</a>.
+                                                <p class="byline">Read all about the project in <a href="http://edenspiekermann.com/en/blog/rbma-radio-relaunch" target="_blank">Edenspiekermann’s blog post</a> and <a href="http://edenspiekermann.com/en/blog/rbma-radio-under-the-hood" target="_blank">take a look under the hood</a> with their developers.
                                             </div>
                                             <div class="span8">
                                                 <img src="img/cases/rbmar-01.png">
@@ -156,7 +172,7 @@
                                             <h3>Red Bull Music Academy World Tour</h3>
                                             <h2>Webdesign for RBMA’s world tour</h2>
                                             <p class="byline">I was lucky to be part of this great project while working with the team at <a href="http://edenspiekermann.com" target="_blank">Edenspiekermann</a>.</p>
-                                            <p class="byline">Unfortunately the site isn’t available anymore as the world tour took place in 2011 but you can learn more about it reading <a href="http://edenspiekermann.com/projects/red-bull-music-academy-world-tour" target="_blank">Edenspiekermann’s project case</a>.</p>
+                                            <p class="byline">You can still <a href="http://redbullmusicacademy.com/worldtour/" target="_blank">check out the world tour page</a> or read read more about it in <a href="http://edenspiekermann.com/projects/red-bull-music-academy-world-tour" target="_blank">Edenspiekermann’s project case</a>.</p>
                                         </div>
                                         <div class="span8">
                                             <img src="img/cases/rbma-worldtour-01.png">
@@ -244,7 +260,7 @@
                 </div>
 			</div>
 			
-			<div class="activities">
+			<div class="activities" id="activities">
 				<div class="row-fluid">
 					<div class="span12">
 						<div class"line"></div>
@@ -278,7 +294,7 @@
 				</div>
 			</div>
 			
-			<div class="about">
+			<div class="about" id="about">
 				<div class="row-fluid">
 					<div class="span12">
 						<h1>About</h1>
@@ -302,7 +318,7 @@
 				</div>
 			</div>
 			
-			<div class="contact">
+			<div class="contact" id="contact">
 				<div class="row-fluid">
 					<div class="span12">
 						<h1>Contact</h1>
@@ -343,7 +359,12 @@
 			
 			<div class="footer row-fluid">
 				<div class="span12">
-					<p>© Marlene Schufferth, July 2012</p>
+					<div class="span6">
+						<p>© Marlene Schufferth, July 2012</p>
+					</div>
+					<div class="span6">
+						<p><a href="#navigation">Back to top ↑</a></p>
+					</div>
 				</div>
 			</div>
 		
@@ -354,6 +375,8 @@
         <script src="js/jquery.timeago.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.tweetable.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript" src="js/smooth-scroll.js"></script>
 
         <script type="text/javascript">
             var _gaq = _gaq || [];
