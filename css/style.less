@@ -1,0 +1,212 @@
+body {
+    background-color: rgb(217,221,226);
+    font-family: "facitweb", Helvetica, sans-serif;
+    color: rgb(43,43,69);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.70);
+    -moz-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.70);
+    -webkit-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.70);
+}
+
+.container-fluid {
+    max-width: 1120px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "ff-tisa-web-pro", Georgia, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4em;
+    text-transform: none;
+    line-height: 1.2em;
+    color: rgb(50,57,114);
+    padding-top: 1em;
+}
+
+h2 {
+    font-size: 1em;
+    color: rgb(102,109,128);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h3 {
+    font-family: "ff-tisa-web-pro", Georgia, serif;
+    font-size: 1.75em;
+    line-height: 1.3em;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(43,43,69);
+    padding-bottom: 1em;
+    
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding-bottom: 0.3em;
+    padding-right: 1em;
+    
+    a:link {
+        color: #9c0054;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:active {
+        text-decoration: underline;
+    }
+    a:visited {
+        color: #9c0054;
+    }
+}
+
+a {
+    color: rgb(50,54,62);
+
+    &:hover {
+        color: #9c0054;
+        text-decoration: none;
+    }
+}
+
+#intro {
+    border-top: 4px solid rgb(34,16,77);
+    background: -webkit-linear-gradient(top, rgb(204,208,216), rgb(213,218,223));
+
+    .span3 {
+        text-align: center;
+    }
+    img {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    h4 {
+        padding-top: 2em;
+    }
+}
+
+#slider {
+    border-top: 1px solid rgba(255, 255, 255, 0.40);
+    box-shadow: 0px -1px 0px 0px rgba(180, 187, 197, 1);
+    max-height: 640px;
+    padding-bottom: 2em;
+
+    .royalSlider .royalSlide, .royalSlider .royalWrapper {
+        background: none;
+    }
+    .royalControlNavOverflow {
+      padding-bottom: 1em;
+    }   
+    img {
+        padding-top: 2em;
+    }
+}
+
+#activities {
+    margin-bottom: 4em;
+    border-top: 1px solid rgba(255, 255, 255, 0.40);
+    box-shadow: 0px -1px 0px 0px rgba(180, 187, 197, 1);
+
+    #tweets {
+        p {
+            font-family: "ff-tisa-web-pro", Georgia, serif;
+            font-size: 1.6em;
+            line-height: 1.4em;
+            font-weight: 700;
+            font-style: italic;
+            color: rgb(43,43,69);
+        }
+    
+        ul {
+            list-style: none;
+            margin: 0;
+        }
+        .timestamp {
+            font-size: 0.6em;
+            font-family: "facitweb", Helvetica, sans-serif;
+            color: rgb(50,54,62);
+            font-style: normal;
+            font-weight: 400;
+            padding-top: 1em;
+        }
+    }
+    img {
+        float:left;
+        padding-bottom: 0.5em;
+    }
+    p {
+        color: #596374;
+    }
+    a.handle {
+        padding-left: 0.5em;
+        padding-top: 0.5em;
+        font-weight: bold;
+    }
+    .caption {
+        font-size: 0.9em;
+        text-shadow: none;
+    }
+}
+
+#about {
+    margin-bottom: 4em;
+    border-top: 1px solid rgba(255, 255, 255, 0.40);
+    box-shadow: 0px -1px 0px 0px rgba(180, 187, 197, 1);
+}
+
+#contact {
+    margin-bottom: 4em;
+    border-top: 1px solid rgba(255, 255, 255, 0.40);
+    box-shadow: 0px -1px 0px 0px rgba(180, 187, 197, 1);
+}
+
+.twitter-share-button {
+    padding-top: 3em;
+    float: left;
+    margin-left: -1.25em;
+}
+
+.fb-like {
+    padding-top: 3em;
+    text-align: right;
+    margin-left: -1.25em;
+    
+}
+
+#footer {
+    margin-top: 5em;
+    border-top: 4px solid rgb(34,16,77);
+
+    p, a {
+        padding-top: 1em;
+        padding-bottom: 1.5em;
+    }
+    a {
+        float: right;
+        color: #9c0054;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    #intro {
+        padding-bottom: 2em;
+        img {
+            width: 150px;
+            padding-top: 2em;
+            padding-bottom: 1em;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            padding: 0 4em;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+}

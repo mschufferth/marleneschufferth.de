@@ -5,23 +5,17 @@
  */
 .royalSlider {	
 	position:relative;
-	/* set width and height of slider here, in px, % or em*/
-	width:600px;
-	height:300px;
-	/* Used to prevent content "jumping" on page load. this property is removed when javascript is loaded and slider is instanciated */
+	height: 620px;
 	overflow:hidden;
 }
-
-
 
 /**
 *  Slides area (set background here)
 */
 
-.royalSlider .royalWrapper {
+.royalWrapper {
 	overflow:hidden;	
 	position:relative;
-
 	width:100%; 
 	height:100%;
 }
@@ -94,7 +88,6 @@
 	width:100%;
 	overflow:hidden;
 	position:absolute;
-	margin-top:-20px;
 	z-index:25;
 }
 /* This container is inside ".royalControlNavContainer"  
@@ -126,14 +119,7 @@
 	width: auto;
 	position: relative;
 	overflow: hidden;
-	margin-top:4px;	
 }
-
-
-
-
-
-
 /* 
 
 	Control navigation (bullets, thumbnails)
@@ -185,8 +171,6 @@
 	height:54px;
 }
 
-
-
 /* 
 
 	Thumbnails navigation arrows 
@@ -216,11 +200,6 @@
 .royalSlider .thumbsArrow.disabled {
 	
 }
-
-
-
-
-
 
 /* Captions container */
 .royalSlider .royalCaption {
@@ -273,19 +252,14 @@
 	background-image:url(../img/preloader.gif);
 }
 
-
-
-
-
-
 .royalSlider .grab-cursor{cursor:move;}
-.royalSlider .grab-cursor{cursor:url("../img/cursors/grab.png") 8 8,-moz-grab;}
-.royalSlider .grab-cursor{*cursor:url(../img/cursors/grab.cur);}
+.royalSlider .grab-cursor{cursor:url("../../img/grab.png") 8 8,-moz-grab;}
+.royalSlider .grab-cursor{*cursor:url(../../img/grab.cur);}
 .royalSlider .grab-cursor{cursor:move\0/;} /* ie8 hack */
 
 .royalSlider .grabbing-cursor{cursor:move;}
-.royalSlider .grabbing-cursor{cursor:url("../img/cursors/grabbing.png") 8 8,-moz-grabbing;}
-.royalSlider .grabbing-cursor{*cursor:url(../img/cursors/grabbing.cur);}
+.royalSlider .grabbing-cursor{cursor:url("../../img/grab.png") 8 8,-moz-grabbing;}
+.royalSlider .grabbing-cursor{*cursor:url(../../img/grabbing.cur);}
 
 
 /* Cursor used if mouse dragging is disabled */
