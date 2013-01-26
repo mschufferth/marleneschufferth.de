@@ -5,31 +5,26 @@
  */
 .royalSlider {	
 	position:relative;
-	height: 620px;
+	/* set width and height of slider here, in px, % or em*/
+	width: 100%;
+	height: 575px;
+	/* Used to prevent content "jumping" on page load. this property is removed when javascript is loaded and slider is instanciated */
 	overflow:hidden;
 }
 
-/**
-*  Slides area (set background here)
-*/
-
-.royalWrapper {
+.royalSlider .royalWrapper {
 	overflow:hidden;	
 	position:relative;
+
 	width:100%; 
 	height:100%;
 }
+
 .royalSlider .royalSlide,
 .royalSlider .royalWrapper {
-	/* Bakground behind slides */
-	background: #111111; 
-	background: -moz-linear-gradient(top, #111111 0%, #242424 100%); 	
-	background: -webkit-linear-gradient(top, #111111 0%,#242424 100%); 
-	background: -o-linear-gradient(top, #111111 0%,#242424 100%);
-	background: -ms-linear-gradient(top, #111111 0%,#242424 100%); 	
-	background: linear-gradient(top, #111111 0%,#242424 100%);
+
 }
-/* slides holder, grabbing container */
+
 .royalSlider .royalSlidesContainer {
 	position: relative;
 	left: 0;
@@ -40,8 +35,6 @@
 	border: 0 !important;
 }
 
-
-/* slide item */
 .royalSlider .royalSlide {
 	padding: 0 !important;
 	margin: 0 !important;	
@@ -54,49 +47,43 @@
 	overflow:hidden;	
 }
 
-/* 
-
-	Direction Navigation (arrows) 
-
-*/
 .royalSlider .arrow
 {	
 	z-index:25;
 }
+
 .royalSlider .arrow:hover {
-	
+
 }
+
 .royalSlider .arrow.disabled {
-	
+
 }
-/* left arrow */
+
 .royalSlider .arrow.left {
-	/* background-position: top left; */
-	/* left: 0;	 */
+
 }
-/* right arrow */
+
 .royalSlider .arrow.right {
-	/* background-position: top right; */
-	/* right: 0; */
+
 }
-
-
-
 
 /* Control navigation container (bullets or thumbs) */
 .royalSlider .royalControlNavOverflow {
 	width:100%;
 	overflow:hidden;
 	position:absolute;
+	margin-top:-20px;
 	z-index:25;
 }
-/* This container is inside ".royalControlNavContainer"  
-   and is used for auto horizontal centering */
+
+/* This container is inside ".royalControlNavContainer" and is used for auto horizontal centering */
 .royalSlider .royalControlNavCenterer {	
 	float: left;
 	position: relative;
 	left: -50%;
 }
+
 /* Control navigation container*/ 
 .royalSlider .royalControlNavContainer {
 	float: left;
@@ -104,27 +91,26 @@
 	left: 50%;	
 }
 
-
 /* Scrollable thumbnails containers */
 .royalSlider .royalControlNavThumbsContainer {		
 	left:0;
 	position:relative;
 }
+
 .royalSlider .thumbsAndArrowsContainer {
 	overflow:hidden;
 	width: 100%;
 	position: relative;
 }
+
 .royalSlider .royalControlNavOverflow.royalThumbs {	
 	width: auto;
 	position: relative;
 	overflow: hidden;
+	margin-top:4px;	
 }
-/* 
 
-	Control navigation (bullets, thumbnails)
-	
-*/
+/* Control navigation (bullets, thumbnails) */
 .royalSlider .royalControlNavOverflow a{	
 	background:#0C0 none no-repeat scroll 0 0;
 	
@@ -171,11 +157,7 @@
 	height:54px;
 }
 
-/* 
-
-	Thumbnails navigation arrows 
-	
-*/
+/* Thumbnails navigation arrows */
 .royalSlider .thumbsArrow {	
 	width: 38px;
 	height: 68px;	
@@ -211,6 +193,7 @@
 	/*font: normal normal normal 1em/1.5em Georgia, serif;
 	color:#FFF;		*/
 }
+
 /* Caption item */
 .royalSlider .royalCaptionItem {
 	position:absolute;	
@@ -220,8 +203,6 @@
 	padding: 0;
 }
 
-
-
 /* Loading (welcome) screen */
 .royalSlider .royalLoadingScreen {
 	background:#FFF;
@@ -230,6 +211,7 @@
 	position:absolute;
 	z-index:99;	
 }
+
 /* Loading screen text ("Loading...") */
 .royalSlider .royalLoadingScreen p {		
 	width:100%;
@@ -253,14 +235,13 @@
 }
 
 .royalSlider .grab-cursor{cursor:move;}
-.royalSlider .grab-cursor{cursor:url("../../img/grab.png") 8 8,-moz-grab;}
-.royalSlider .grab-cursor{*cursor:url(../../img/grab.cur);}
+.royalSlider .grab-cursor{cursor:url("../img/cursors/grab.png") 8 8,-moz-grab;}
+.royalSlider .grab-cursor{*cursor:url(../img/cursors/grab.cur);}
 .royalSlider .grab-cursor{cursor:move\0/;} /* ie8 hack */
 
 .royalSlider .grabbing-cursor{cursor:move;}
-.royalSlider .grabbing-cursor{cursor:url("../../img/grab.png") 8 8,-moz-grabbing;}
-.royalSlider .grabbing-cursor{*cursor:url(../../img/grabbing.cur);}
-
+.royalSlider .grabbing-cursor{cursor:url("../img/cursors/grabbing.png") 8 8,-moz-grabbing;}
+.royalSlider .grabbing-cursor{*cursor:url(../img/cursors/grabbing.cur);}
 
 /* Cursor used if mouse dragging is disabled */
 .royalSlider .auto-cursor{cursor:auto;}
