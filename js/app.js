@@ -11,7 +11,7 @@ $(document).ready(function() {
     //     });
     // });
 
-    $('#slider').royalSlider({
+    $('.royalSlider').royalSlider({
         captionShowEffects:["moveleft", "fade"],
         directionNavEnabled: true,
         directionNavAutoHide: false,
