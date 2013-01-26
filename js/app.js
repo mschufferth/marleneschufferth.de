@@ -11,13 +11,11 @@ $(document).ready(function() {
     //     });
     // });
 
-    $('#slider').royalSlider({
+    $('.royalSlider.marlene').royalSlider({
         captionShowEffects:["moveleft", "fade"],
         directionNavEnabled: true,
         directionNavAutoHide: false,
         autoScaleSlider: true,
-        autoScaleSliderWidth: 1120,
-        autoScaleSliderHeight: 675,
         beforeLoadStart:function() {                    
             this.arrowLeft.html('previous');
             this.arrowRight.html('next');

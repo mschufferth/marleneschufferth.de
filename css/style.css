@@ -1,0 +1,186 @@
+body {
+  background-color: #d9dde2;
+  font-family: "facitweb", Helvetica, sans-serif;
+  color: #2b2b45;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+  -moz-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+  -webkit-text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+}
+.container-fluid {
+  max-width: 1120px;
+  margin: auto;
+}
+h1 {
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 4em;
+  text-transform: none;
+  line-height: 1.2em;
+  color: #323972;
+  padding-top: 1em;
+}
+h2 {
+  font-size: 1em;
+  color: #666d80;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+h3 {
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  font-size: 1.75em;
+  line-height: 1.3em;
+  font-weight: 700;
+  font-style: italic;
+  color: #2b2b45;
+  padding-bottom: 1em;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  padding-bottom: 0.3em;
+  padding-right: 1em;
+}
+p a:link {
+  color: #9c0054;
+}
+p a:hover {
+  text-decoration: underline;
+}
+p a:active {
+  text-decoration: underline;
+}
+p a:visited {
+  color: #9c0054;
+}
+a {
+  color: #32363e;
+}
+a:hover {
+  color: #9c0054;
+  text-decoration: none;
+}
+#intro {
+  border-top: 4px solid #22104d;
+  background: -webkit-linear-gradient(top, #ccd0d8, #d5dadf);
+}
+#intro .span3 {
+  text-align: center;
+}
+#intro img {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+#intro h4 {
+  padding-top: 2em;
+}
+#slider {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0px -1px 0px 0px #b4bbc5;
+}
+#activities {
+  margin-bottom: 4em;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0px -1px 0px 0px #b4bbc5;
+}
+#activities #tweets p {
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  font-size: 1.6em;
+  line-height: 1.4em;
+  font-weight: 700;
+  font-style: italic;
+  color: #2b2b45;
+}
+#activities #tweets ul {
+  list-style: none;
+  margin: 0;
+}
+#activities #tweets .timestamp {
+  font-size: 0.6em;
+  font-family: "facitweb", Helvetica, sans-serif;
+  color: #32363e;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 1em;
+}
+#activities img {
+  float: left;
+  padding-bottom: 0.5em;
+}
+#activities p {
+  color: #596374;
+}
+#activities a.handle {
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  font-weight: bold;
+}
+#activities .caption {
+  font-size: 0.9em;
+  text-shadow: none;
+}
+#about {
+  margin-bottom: 4em;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0px -1px 0px 0px #b4bbc5;
+}
+#contact {
+  margin-bottom: 4em;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0px -1px 0px 0px #b4bbc5;
+}
+.twitter-share-button {
+  padding-top: 3em;
+  float: left;
+  margin-left: -1.25em;
+}
+.fb-like {
+  padding-top: 3em;
+  text-align: right;
+  margin-left: -1.25em;
+}
+#footer {
+  margin-top: 5em;
+  border-top: 4px solid #22104d;
+}
+#footer p,
+#footer a {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+#footer a {
+  float: right;
+  color: #9c0054;
+}
+.royalSlider {
+  position: relative;
+  /* set width and height of slider here, in px, % or em*/
+
+  width: 100%;
+  height: 575px;
+  /* Used to prevent content "jumping" on page load. this property is removed when javascript is loaded and slider is instanciated */
+
+  overflow: hidden;
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  #intro {
+    padding-bottom: 2em;
+  }
+  #intro img {
+    width: 150px;
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+  #intro h1 {
+    font-size: 2em;
+    text-align: center;
+    padding: 0 4em;
+  }
+  #intro h2 {
+    text-align: center;
+  }
+}
