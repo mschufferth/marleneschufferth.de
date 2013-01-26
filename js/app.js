@@ -15,7 +15,7 @@ $(document).ready(function() {
         captionShowEffects:["moveleft", "fade"],
         directionNavEnabled: true,
         directionNavAutoHide: false,
-        autoScaleSlider: true,
+        /* autoScaleSlider: true, */
         beforeLoadStart:function() {                    
             this.arrowLeft.html('previous');
             this.arrowRight.html('next');
