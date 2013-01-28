@@ -80,6 +80,7 @@ a:hover {
 #slider {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0px -1px 0px 0px #b4bbc5;
+  padding-bottom: 2em;
 }
 #slider .royalArrowContainer {
   padding-top: 1em;
@@ -159,7 +160,7 @@ a:hover {
   color: #9c0054;
 }
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #intro {
     padding-bottom: 2em;
   }
@@ -175,5 +176,36 @@ a:hover {
   }
   #intro h2 {
     text-align: center;
+  }
+  #slider .royalSlider {
+    height: 800px;
+  }
+  #slider .royalArrowContainer {
+    padding-top: 0;
+  }
+}
+@media (max-width: 640px) {
+  #slider .royalSlider {
+    height: 700px;
+  }
+  #slider .royalArrowContainer {
+    padding-top: 0;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 450px) {
+  #slider .royalSlider {
+    height: 675px;
+  }
+  #slider .royalArrowContainer {
+    padding-top: 0;
+  }
+}
+@media (max-width: 400px) {
+  #slider .royalSlider {
+    height: 650px;
+  }
+  #slider .royalArrowContainer {
+    padding-top: 0;
   }
 }
